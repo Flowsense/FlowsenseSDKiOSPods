@@ -10,9 +10,6 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Flowsense/SDKiOS.git", :tag => s.version.to_s }
   s.platform     = :ios, "8.0"
 
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-
   s.ios.vendored_frameworks = 'SDKs\ with\ Push\ Enabled/FlowsenseSDK.framework', 'SDKs\ with\ Push\ Enabled/AWSCore.framework', 'SDKs\ with\ Push\ Enabled/AWSKinesis.framework'
   
 end
